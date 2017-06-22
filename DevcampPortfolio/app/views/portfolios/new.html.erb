@@ -15,6 +15,15 @@
     <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
+  
+  <ul>
+    <%= f.fields_for :techonologies do |techonology_form| %>
+    <li>
+      <%= techonology_form.label :name %>
+      <%= techonology_form.text_field :name %>
+    </li>
+    <% end %>
+  </ul>
 
   <div class="actions">
     <%= f.submit %>
