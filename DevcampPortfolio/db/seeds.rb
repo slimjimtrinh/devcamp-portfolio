@@ -66,3 +66,11 @@ puts "10 blog posts created"
     end
   
   puts "9 portfolio items created"
+  
+  3.times do |techonology|
+    Portfolio.last.techonologies.create!(
+      name: "Techonology #{techonology}",
+      )
+  end
+  
+  puts "3 technologies created"
