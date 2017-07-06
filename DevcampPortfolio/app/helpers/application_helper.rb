@@ -16,4 +16,8 @@ module ApplicationHelper
     end 
   end
   
+  def copyright_generator
+    TrinhViewTool::Renderer.copyright 'Jimmy Trinh', 'All rights reserved'
+  end
+  
 end
